@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "611111602833",
+    "firebase_url": "https://ohoneauthtest.firebaseio.com",
+    "project_id": "ohoneauthtest",
+    "storage_bucket": "ohoneauthtest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611111602833:android:c02aacdab6b243c4",
+        "android_client_info": {
+          "package_name": "com.lazycoder.phoneauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611111602833-nqen5fj53kjrf4pe70fda2ode2pd6ig5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lazycoder.phoneauth",
+            "certificate_hash": "3b9f6b535186ee3a73ae8d7407d651895e8012cc"
+          }
+        },
+        {
+          "client_id": "611111602833-dienqe58i41jqrmvt42r1df5h1nkrmtd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7KevFPRHc2Jm62Q2xRWo8KoXWJsJghQ4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611111602833-dienqe58i41jqrmvt42r1df5h1nkrmtd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
