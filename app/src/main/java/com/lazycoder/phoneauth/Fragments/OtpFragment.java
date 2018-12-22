@@ -21,6 +21,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.lazycoder.phoneauth.ProfileActivity;
 import com.lazycoder.phoneauth.R;
 
 import java.util.concurrent.TimeUnit;
@@ -77,10 +78,10 @@ public class OtpFragment extends Fragment {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
 
-//                            Intent intent = new Intent(VerifyPhoneActivity.this, ProfileActivity.class);
-//                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//
-//                            startActivity(intent);
+                            Intent intent = new Intent(getContext(), ProfileActivity.class);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                            startActivity(intent);
 
                         } else {
                             Toast.makeText(getContext(), task.getException().getMessage(), Toast.LENGTH_LONG).show();
