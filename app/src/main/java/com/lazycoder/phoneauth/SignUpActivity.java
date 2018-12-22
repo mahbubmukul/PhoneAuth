@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.lazycoder.phoneauth.Fragments.OtpFragment;
 import com.lazycoder.phoneauth.Fragments.PhoneFragment;
 
@@ -42,6 +43,17 @@ public class SignUpActivity extends AppCompatActivity {
             makePaymentFragment.setArguments(bundle);
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.container, makePaymentFragment).addToBackStack(null).commit();
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+            Intent intent = new Intent(this, ProfileActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
         }
     }
 }
